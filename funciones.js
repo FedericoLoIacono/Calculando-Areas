@@ -7,7 +7,9 @@ var CalculoRadio = function () {
         alert('Debe ingresar un numero');
     } else if (radio <= 0) {
         alert('Ingrese un numero positivo');
-    } else {
+    }else if(radio>100){
+        alert('El valor debe ser menor a 100. Vuelva a ingrersar.');
+    }else {
         var resultadoRad = Math.PI * (radio * 2);
         alert(resultadoRad);  
         contador++;
